@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meus Links</title>
+  <style>
+    :root {
+      --background: #18181B;
+      --foreground: #F4F4F5;
+      --muted: #71717A;
+      --primary: #3F3F46;
+      --primary-hover: #52525B;
+      --border-radius: 0.5rem;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 9999px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      /* border: 2px solid var(--primary-hover); */
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: var(--foreground);
+    }
+
+    .link {
+      display: block;
+      background-color: var(--primary);
+      color: var(--foreground);
+      text-decoration: none;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: var(--border-radius);
+      transition: background-color 0.3s ease;
+    }
+
+    .link:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./eu.jpg" alt="Sua Foto" class="avatar" />
+    <h1>Diogo Luxa</h1>
+
+    <a class="link" href="https://github.com/DiogoLuxa" target="_blank">GitHub</a>
+    <a class="link" href="https://wa.me/5511972871432" target="_blank">WhatsApp</a>
+
+    <div class="footer">© 2025 Diogo Luxa</div>
+  </div>
+</body>
+</html>
